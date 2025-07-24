@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../shared/xml/schema/fillTypes.xsd">
+
+	<fillTypes>
+	
+        <fillType name="SEEDS" title="$l10n_fillType_seeds" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
+            <pallet     filename="$data/objects/bigBag/seeds/bigBag_seeds.xml" />
+        </fillType>	
+		
+		<fillType name="ROADSALT" title="$l10n_fillType_roadSalt" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
+			<pallet     filename="$data/objects/bigBag/roadSalt/bigBag_roadSalt.xml" />
+        </fillType>		
+	
+        <fillType name="FERTILIZER" title="$l10n_fillType_fertilizer" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
+            <pallet     filename="$data/objects/bigBag/fertilizer/bigBag_fertilizer.xml" />
+        </fillType>	
+		
+        <fillType name="PIGFOOD" title="$l10n_fillType_pigFood" showOnPriceTable="false" unitShort="$l10n_unit_literShort">
+			<pallet     filename="$data/objects/bigBag/pigFood/bigBag_pigFood.xml" />
+        </fillType>		
+		
+        <fillType name="LIME" title="$l10n_fillType_lime" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
+            <pallet     filename="$data/objects/bigBag/lime/bigBag_lime.xml" />
+        </fillType>		
+
+		
+	</fillTypes>	
+	
+    <fillTypeCategories>
+        <fillTypeCategory name="BULK" >SEEDS FERTILIZER LIME ROADSALT PIGFOOD</fillTypeCategory>
+        <fillTypeCategory name="SPREADER" >FERTILIZER</fillTypeCategory>		
+        <fillTypeCategory name="AUGERWAGON" >SEEDS FERTILIZER</fillTypeCategory>
+		<fillTypeCategory name="SILAGETRAILER" >SUGARCANE</fillTypeCategory>
+        <fillTypeCategory name="TRAINWAGON" >WHEAT BARLEY OAT CANOLA MAIZE SUNFLOWER SOYBEAN SUGARCANE SUGARBEET POTATO SORGHUM OLIVE GRAPE</fillTypeCategory>
+        <fillTypeCategory name="SHOVEL" >SEEDS FERTILIZER LIME ROADSALT PIGFOOD</fillTypeCategory>
+		<fillTypeCategory name="LOADINGVEHICLE">SEEDS FERTILIZER LIME</fillTypeCategory>
+    </fillTypeCategories>
+	
+	
+    <fillTypeSounds>
+        <fillTypeSound fillTypes="LIME">
+            <sound template="dustFill"/>
+        </fillTypeSound>
+	
+        <fillTypeSound fillTypes="SEEDS FERTILIZER">
+            <sound template="grainMediumFill"/>
+        </fillTypeSound>
+		
+        <fillTypeSound fillTypes="PIGFOOD">
+            <sound template="grainLargeFill"/>
+        </fillTypeSound>		
+		
+        <fillTypeSound fillTypes="ROADSALT">
+            <sound template="gravelFill"/>
+        </fillTypeSound>		
+    </fillTypeSounds>
+</map>

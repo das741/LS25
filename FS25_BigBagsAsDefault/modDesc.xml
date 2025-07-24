@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="92">
+    <author>Raster R3 Modding</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>BigBags As Default</en>
+        <de>BigBags Als Standard</de>
+        <fr>BigBags Par Défaut</fr>
+        <es>BigBags Por Defecto</es>
+    </title>
+<description>
+<en>
+<![CDATA[Do you like Big Bags? Are you used to using them in your games?
+
+With this mod you will no longer have to regret that when you unload your seeders or fertilizers,
+and lose your precious BigBags in favor of pallets. Now when unloading seeds, fertilizer, lime,
+salt or pig food, by default BigBags will be used. This will affect all vehicles and even factories
+that do not specify otherwise.
+
+Enjoy your BigBags and forget about handling annoying pallets...]]>
+</en>
+<de>
+<![CDATA[Magst du Big Bags? Bist du es gewohnt, sie in deinen Spielen zu verwenden?
+
+Mit dieser Mod musst du das nicht mehr bedauern, wenn du deine Sämaschinen oder Dünger ablädst,
+und Ihre wertvollen BigBags zugunsten von Paletten verlieren. Jetzt werden beim Entladen von Saatgut, Dünger, Kalk,
+Salz oder Schweinefutter werden jetzt standardmäßig BigBags verwendet. Dies betrifft alle Fahrzeuge und sogar Fabriken
+die nichts anderes angeben.
+
+Genießt eure BigBags und vergesst das lästige Hantieren mit Paletten...]]>
+</de>
+<fr>
+<![CDATA[Vous aimez les Big Bags ? Avez-vous l'habitude de les utiliser dans vos jeux ?
+
+Avec ce mod vous n'aurez plus à regretter que lorsque vous déchargez vos semoirs ou engrais, vous perdiez votre précieux
+BigBags au profit des palettes. Désormais, lors du téléchargement de graines, d'engrais, de chaux, de sel ou d'aliments pour porcs, par défaut
+Des BigBags seront utilisés. Cela affectera tous les véhicules et même les usines qui ne précisent pas le contraire.
+
+Profitez de vos BigBags et oubliez la manipulation de palettes ennuyeuses...]]>
+</fr>
+<es>
+<![CDATA[¿Te gustan las BigBags? ¿Estás acostumbrado a usarlas en tus partidas?
+
+Con este mod ya no tendrás que lamentar que al descargar tus sembradoras o abonadoras, pierdas tus preciadas
+BigBags en favor de los pallets. Ahora al descargar semillas, abono, cal, sal o comida para cerdos, por defecto
+se usarán las BigBags. Esto afectará a todos los vehículos e incluso a las fábricas que no especifiquen lo
+contrario.
+
+Disfruta de tus BigBags y olvídate de manejar molestos pallets...]]>
+</es>
+</description>
+	
+    <iconFilename>modIcon.dds</iconFilename>
+    <multiplayer supported="true"/>
+	
+	<fillTypes filename="newfilltypes.xml" />
+</modDesc>
