@@ -1,0 +1,760 @@
+﻿<?xml version="0.1" encoding="utf-8" standalone="no" ?>
+<vehicle type="augerWagon" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>ULW 4000</name>
+        <specs>
+            <neededPower>350</neededPower>
+        </specs>
+        <functions>
+            <function>$l10n_function_augerWagon</function>
+        </functions>
+        <image>store_ulw4000.png</image>
+        <price>102000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>HAWE</brand>
+        <category>augerWagons</category>
+        <shopTranslationOffset>0 -0.07 0</shopTranslationOffset>
+        <shopRotationOffset>0.9 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>2571776</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>660992</indexBufferMemoryUsage>
+        <textureMemoryUsage>2490368</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_augerWagon</typeDesc>
+        <filename>ulw4000.i3d</filename>
+        <size width="3.2" height="4.15" length="11.6"/>
+        <sounds volumeFactor="2.0"/>
+        <components maxMass="45000">
+            <component centerOfMass="0 1 -1.55" solverIterationCount="10" mass="9600"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT"/>
+        <mapHotspot type="TRAILER"/>
+    </base>
+
+    <powerConsumer ptoRpm="400" neededMaxPtoPower="50"/>
+
+    <wheels>
+        <wheelConfigurations tireCategories="TRAILER">
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" saveId="DEFAULT">
+                <tireCombination brand="VREDESTEIN" names="flotationTrac"/>
+                <wheels autoRotateBackSpeed="1.7">
+                    <wheel dimensions="710_50R30_5" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="axisFrontLeft"  driveNode="wheelFrontLeft"  forcePointRatio="0.45" initialCompression="13" suspTravel="0.15" spring="75" damper="70" yOffset="0.065"/>
+                        <steeringAxle scale="0.4" rotMax="10" rotMin="-10"/>
+                        <steering node="steeringBarFront" nodeMinTransX="0.08" nodeMaxTransX="-0.08"/>
+                        <outerRim filename="shared/rims/rims.i3d" node="0|0" widthAndDiam="23.5 30"/>
+                        <innerRim filename="shared/rims/rims.i3d" node="1|0" widthAndDiam="23 36.8"/>
+                    </wheel>
+                    <wheel dimensions="710_50R30_5" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="axisFrontRight" driveNode="wheelFrontRight" forcePointRatio="0.45" initialCompression="13" suspTravel="0.15" spring="75" damper="70" yOffset="0.065"/>
+                        <steeringAxle scale="0.4" rotMax="10" rotMin="-10"/>
+                        <outerRim filename="shared/rims/rims.i3d" node="0|1" widthAndDiam="23.5 30"/>
+                        <innerRim filename="shared/rims/rims.i3d" node="1|1" widthAndDiam="23 36.8"/>
+                    </wheel>
+                    <wheel dimensions="710_50R30_5" isLeft="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelMiddleLeft"                            forcePointRatio="0.45" initialCompression="13" suspTravel="0.15" spring="75" damper="70" yOffset="0.039"/>
+                        <wheelChock parkingNode="wheelChock01"/>
+                        <wheelChock parkingNode="wheelChock02" isInverted="true"/>
+                        <outerRim filename="shared/rims/rims.i3d" node="0|0" widthAndDiam="23.5 30"/>
+                        <innerRim filename="shared/rims/rims.i3d" node="1|0" widthAndDiam="23 36.8"/>
+                    </wheel>
+                    <wheel dimensions="710_50R30_5" isLeft="false">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelMiddleRight"                           forcePointRatio="0.45" initialCompression="13" suspTravel="0.15" spring="75" damper="70" yOffset="0.039"/>
+                        <outerRim filename="shared/rims/rims.i3d" node="0|1" widthAndDiam="23.5 30"/>
+                        <innerRim filename="shared/rims/rims.i3d" node="1|1" widthAndDiam="23 36.8"/>
+                    </wheel>
+                    <wheel dimensions="710_50R30_5" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="axisBackLeft"  driveNode="wheelBackLeft"    forcePointRatio="0.45" initialCompression="13" suspTravel="0.15" spring="75" damper="70" yOffset="0.0135"/>
+                        <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
+                        <steering node="steeringBarBack" nodeMinTransX="0.08" nodeMaxTransX="-0.08"/>
+                        <outerRim filename="shared/rims/rims.i3d" node="0|0" widthAndDiam="23.5 30"/>
+                        <innerRim filename="shared/rims/rims.i3d" node="1|0" widthAndDiam="23 36.8"/>
+                    </wheel>
+                    <wheel dimensions="710_50R30_5" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="axisBackRight" driveNode="wheelBackRight"   forcePointRatio="0.45" initialCompression="13" suspTravel="0.15" spring="75" damper="70" yOffset="0.0135"/>
+                        <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
+                        <outerRim filename="shared/rims/rims.i3d" node="0|1" widthAndDiam="23.5 30"/>
+                        <innerRim filename="shared/rims/rims.i3d" node="1|1" widthAndDiam="23 36.8"/>
+                    </wheel>
+                </wheels>
+                <objectChange node="wheels" visibilityActive="true"/>
+                <objectChange node="crawler" visibilityActive="false"/>
+                <objectChange node="fenderSmall" visibilityActive="true"/>
+                <objectChange node="fenderBig" visibilityActive="false"/>
+            </wheelConfiguration>
+            <wheelConfiguration name="$l10n_configuration_valueWheelMedium" price="8400" saveId="MEDIUM">
+                <tireCombination brand="VREDESTEIN" names="flotationTrac"/>
+                <wheels baseConfig="DEFAULT">
+                    <wheel dimensions="800_45R30_5">
+                        <steeringAxle scale="0.4" rotMax="8" rotMin="-8"/>
+                        <steering node="steeringBarFront" nodeMinTransX="0.08" nodeMaxTransX="-0.08"/>
+                        <outerRim filename="shared/rims/rims.i3d" node="0|0" widthAndDiam="27.5 30.5"/>
+                        <innerRim filename="shared/rims/rims.i3d" node="1|0" widthAndDiam="27 37"/>
+                    </wheel>
+                    <wheel dimensions="800_45R30_5">
+                        <steeringAxle scale="0.4" rotMax="8" rotMin="-8"/>
+                        <outerRim filename="shared/rims/rims.i3d" node="0|1" widthAndDiam="27.5 30.5"/>
+                        <innerRim filename="shared/rims/rims.i3d" node="1|1" widthAndDiam="27 37"/>
+                    </wheel>
+                    <wheel dimensions="800_45R30_5">
+                        <outerRim filename="shared/rims/rims.i3d" node="0|0" widthAndDiam="27.5 30.5"/>
+                        <innerRim filename="shared/rims/rims.i3d" node="1|0" widthAndDiam="27 37"/>
+                    </wheel>
+                    <wheel dimensions="800_45R30_5">
+                        <outerRim filename="shared/rims/rims.i3d" node="0|1" widthAndDiam="27.5 30.5"/>
+                        <innerRim filename="shared/rims/rims.i3d" node="1|1" widthAndDiam="27 37"/>
+                    </wheel>
+                    <wheel dimensions="800_45R30_5">
+                        <steeringAxle scale="-0.7" rotMax="10" rotMin="-10"/>
+                        <steering node="steeringBarBack" nodeMinTransX="0.08" nodeMaxTransX="-0.08"/>
+                        <outerRim filename="shared/rims/rims.i3d" node="0|0" widthAndDiam="27.5 30.5"/>
+                        <innerRim filename="shared/rims/rims.i3d" node="1|0" widthAndDiam="27 37"/>
+                    </wheel>
+                    <wheel dimensions="800_45R30_5">
+                        <steeringAxle scale="-0.7" rotMax="10" rotMin="-10"/>
+                        <outerRim filename="shared/rims/rims.i3d" node="0|1" widthAndDiam="27.5 30.5"/>
+                        <innerRim filename="shared/rims/rims.i3d" node="1|1" widthAndDiam="27 37"/>
+                    </wheel>
+                </wheels>
+                <objectChange node="wheels" visibilityActive="true"/>
+                <objectChange node="crawler" visibilityActive="false"/>
+                <objectChange node="fenderSmall" visibilityActive="false"/>
+                <objectChange node="fenderBig" visibilityActive="true"/>
+                <objectChange node="wheelFrontLeft" translationActive="0.364 -0.076 -0.15"/>
+                <objectChange node="wheelFrontRight" translationActive="-0.364 -0.076 -0.15"/>
+                <objectChange node="wheelMiddleLeft" translationActive="1.098 0.77 -1.998"/>
+                <objectChange node="wheelMiddleRight" translationActive="-1.098 0.77 -1.99"/>
+                <objectChange node="wheelBackLeft" translationActive="0.364 -0.076 -0.15"/>
+                <objectChange node="wheelBackRight" translationActive="-0.364 -0.076 -0.15"/>
+            </wheelConfiguration>
+            <wheelConfiguration name="$l10n_configuration_valueWheelBroad" price="9100" saveId="BROAD">
+                <tireCombination brand="VREDESTEIN" names="flotationTrac"/>
+                <wheels baseConfig="DEFAULT">
+                    <wheel dimensions="850_50R30_5">
+                        <steeringAxle scale="0.4" rotMax="8" rotMin="-8"/>
+                        <physics yOffset="0.04" suspTravel="0.12"/>
+                        <steering node="steeringBarFront" nodeMinTransX="0.08" nodeMaxTransX="-0.08"/>
+                        <outerRim filename="shared/rims/rims.i3d" node="0|0" widthAndDiam="27.5 30"/>
+                        <innerRim filename="shared/rims/rims.i3d" node="1|0" widthAndDiam="27 37"/>
+                    </wheel>
+                    <wheel dimensions="850_50R30_5">
+                        <physics yOffset="0.04" suspTravel="0.12"/>
+                        <steeringAxle scale="0.4" rotMax="8" rotMin="-8"/>
+                        <outerRim filename="shared/rims/rims.i3d" node="0|1" widthAndDiam="27.5 30"/>
+                        <innerRim filename="shared/rims/rims.i3d" node="1|1" widthAndDiam="27 37"/>
+                    </wheel>
+                    <wheel dimensions="850_50R30_5">
+                        <outerRim filename="shared/rims/rims.i3d" node="0|0" widthAndDiam="27.5 30"/>
+                        <innerRim filename="shared/rims/rims.i3d" node="1|0" widthAndDiam="27 37"/>
+                    </wheel>
+                    <wheel dimensions="850_50R30_5">
+                        <outerRim filename="shared/rims/rims.i3d" node="0|1" widthAndDiam="27.5 30"/>
+                        <innerRim filename="shared/rims/rims.i3d" node="1|1" widthAndDiam="27 37"/>
+                    </wheel>
+                    <wheel dimensions="850_50R30_5">
+                        <steeringAxle scale="-0.7" rotMax="10" rotMin="-10"/>
+                        <steering node="steeringBarBack" nodeMinTransX="0.08" nodeMaxTransX="-0.08"/>
+                        <outerRim filename="shared/rims/rims.i3d" node="0|0" widthAndDiam="27.5 30"/>
+                        <innerRim filename="shared/rims/rims.i3d" node="1|0" widthAndDiam="27 37"/>
+                    </wheel>
+                    <wheel dimensions="850_50R30_5">
+                        <steeringAxle scale="-0.7" rotMax="10" rotMin="-10"/>
+                        <outerRim filename="shared/rims/rims.i3d" node="0|1" widthAndDiam="27.5 30"/>
+                        <innerRim filename="shared/rims/rims.i3d" node="1|1" widthAndDiam="27 37"/>
+                    </wheel>
+                </wheels>
+                <objectChange node="wheels" visibilityActive="true"/>
+                <objectChange node="crawler" visibilityActive="false"/>
+                <objectChange node="fenderSmall" visibilityActive="false"/>
+                <objectChange node="fenderBig" visibilityActive="true"/>
+                <objectChange node="wheelFrontLeft" translationActive="0.417 -0.076 -0.15"/>
+                <objectChange node="wheelFrontRight" translationActive="-0.417 -0.076 -0.15"/>
+                <objectChange node="wheelMiddleLeft" translationActive="1.151 0.77 -1.998"/>
+                <objectChange node="wheelMiddleRight" translationActive="-1.151 0.77 -1.99"/>
+                <objectChange node="wheelBackLeft" translationActive="0.417 -0.076 -0.15"/>
+                <objectChange node="wheelBackRight" translationActive="-0.417 -0.076 -0.15"/>
+            </wheelConfiguration>
+            <wheelConfiguration name="$l10n_configuration_valueCrawler" price="14000" brand="LIZARD">
+                <wheels autoRotateBackSpeed="1.7">
+                    <wheel hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="3.1" repr="crawlerLeftBackWheelRepr" driveNode="crawlerLeftBackWheelDriveNode"   radius="0.48" width="0.93" mass="0.2" frictionScale="1.5" tireType="crawler" initialCompression="20" suspTravel="0.15" spring="140" damper="110" supportsWheelSink="false"/>
+                        <tire tireTrackAtlasIndex="6"/>
+                    </wheel>
+                    <wheel>
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="2.9" repr="crawlerLeftFrontWheel"                                                radius="0.48" width="0.93" mass="0.2" frictionScale="0.7" tireType="crawler" initialCompression="20" suspTravel="0.15" spring="140" damper="110" supportsWheelSink="false" transRatio="1"/>
+                        <tire/>
+                    </wheel>
+                    <wheel hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="3.1" repr="crawlerRightBackWheelRepr" driveNode="crawlerRightBackWheelDriveNode" radius="0.48" width="0.93" mass="0.2" frictionScale="1.5" tireType="crawler" initialCompression="20" suspTravel="0.15" spring="140" damper="110" supportsWheelSink="false"/>
+                        <tire tireTrackAtlasIndex="6" />
+                    </wheel>
+                    <wheel>
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="2.9" repr="crawlerRightFrontWheel"                                               radius="0.48" width="0.93" mass="0.2" frictionScale="0.7" tireType="crawler" initialCompression="20" suspTravel="0.15" spring="140" damper="110" supportsWheelSink="false" transRatio="1"/>
+                        <tire/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T510/16x6_50R8.xml" isLeft="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelMiddleLeft"                            forcePointRatio="0.5" initialCompression="16" suspTravel="0.15" spring="60" damper="60" yOffset="0.015"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T510/16x6_50R8.xml" isLeft="false">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelMiddleRight"                           forcePointRatio="0.5" initialCompression="16" suspTravel="0.15" spring="60" damper="60" yOffset="0.015"/>
+                     </wheel>
+                </wheels>
+                
+                <crawlers>
+                    <crawler filename="$data/shared/crawlers/camso/camoplastFlexHaulCrawler/camoplastFlexHaulCrawler.xml" linkNode="crawlerLeftLinkNode"  wheelIndices="1 2" isLeft="true"/>
+                    <crawler filename="$data/shared/crawlers/camso/camoplastFlexHaulCrawler/camoplastFlexHaulCrawler.xml" linkNode="crawlerRightLinkNode" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+
+                <objectChange node="wheels" visibilityActive="false"/>
+                <objectChange node="crawler" visibilityActive="true"/>
+                <objectChange node="fenderSmall" visibilityActive="false"/>
+                <objectChange node="fenderBig" visibilityActive="true"/>
+            </wheelConfiguration>
+        </wheelConfigurations>
+
+        <hubMaterial materialTemplateName="SHARED_BLACK2"/>
+
+        <hubs>
+            <hub linkNode="wheelFrontLeft"  filename="shared/rims/bpw_hub.xml" isLeft="true"  scale="1 1 1" />
+            <hub linkNode="wheelFrontRight" filename="shared/rims/bpw_hub.xml" isLeft="false"  scale="1 1 1" />
+            <hub linkNode="wheelMiddleLeft"  filename="shared/rims/bpw_hub.xml" isLeft="true"  scale="1 1 1" />
+            <hub linkNode="wheelMiddleRight" filename="shared/rims/bpw_hub.xml" isLeft="false"  scale="1 1 1" />
+            <hub linkNode="wheelBackLeft"    filename="shared/rims/bpw_hub.xml" isLeft="true"  scale="1 1 1" />
+            <hub linkNode="wheelBackRight"   filename="shared/rims/bpw_hub.xml" isLeft="false"  scale="1 1 1" />
+        </hubs>
+    </wheels>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="trailerLow" attacherHeight="0.7"/>
+        </inputAttacherJoints>
+        <brakeForce force="1.2" maxForce="4.5" maxForceMass="44500"/>
+        <steeringAxleAngleScale backwards="true" speedDependent="false" forceUsage="true"/>
+        <support animationName="moveSupport"/>
+        <airConsumer usage="0.3"/>
+        <sounds>
+            <active file="$data/sounds/tools/trailer/trailerRattle_02.wav" innerRadius="10" outerRadius="50" volumeScale="1.8" isLocalSound="true" pitchScale="0.9">
+                <volume indoor="0.7" outdoor="0.9" >
+                    <modifier type="WHEEL_SUSPENSION" value="-0.08" modifiedValue="0.3"/>
+                    <modifier type="WHEEL_SUSPENSION" value="-0.07" modifiedValue="0.25"/>
+                    <modifier type="WHEEL_SUSPENSION" value="-0.06" modifiedValue="0.2"/>
+                    <modifier type="WHEEL_SUSPENSION" value="-0.05" modifiedValue="0.15"/>
+                    <modifier type="WHEEL_SUSPENSION" value="-0.04" modifiedValue="0.1"/>
+                    <modifier type="WHEEL_SUSPENSION" value="-0.00" modifiedValue="0.0"/>
+                    <modifier type="WHEEL_SUSPENSION" value="0.04" modifiedValue="0.1"/>
+                    <modifier type="WHEEL_SUSPENSION" value="0.05" modifiedValue="0.15"/>
+                    <modifier type="WHEEL_SUSPENSION" value="0.06" modifiedValue="0.2"/>
+                    <modifier type="WHEEL_SUSPENSION" value="0.07" modifiedValue="0.25"/>
+                    <modifier type="WHEEL_SUSPENSION" value="0.08" modifiedValue="0.3"/>
+
+                    <modifier type="SPEED" value="0.0" modifiedValue="0.0"/>
+                    <modifier type="SPEED" value="2.0" modifiedValue="1.0"/>
+                    <modifier type="SPEED" value="40.0" modifiedValue="1.0"/>
+                </volume>
+                <lowpassCutoffFrequency indoor="250" outdoor="20000"/>
+                <lowpassGain indoor="0.5" outdoor="1"/>
+            </active>
+        </sounds>
+    </attachable>
+
+    <powerTakeOffs>
+        <input inputAttacherJointIndices="1" inputNode="ptoInputNode" aboveAttacher="true" detachNode="ptoDetachNode" filename="$data/shared/assets/powerTakeOffs/walterscheidW.xml"/>
+        <local startNode="localPtoStart" endNode="localPtoEnd" filename="$data/shared/assets/powerTakeOffs/walterscheidW.xml"/>
+        <sounds>
+            <turnedOn template="tractorPTO" volumeScale="0.5" linkNode="attacherJoint"/>
+        </sounds>
+    </powerTakeOffs>
+
+    <connectionHoses>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn"  node="hydraulicIn01"  length="1.5" diameter="0.02" adapterNode="hydraulicIn01_detachedAdapter">
+            <objectChange node="hydraulicIn01_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicOut" node="hydraulicOut01" length="1.5" diameter="0.02" adapterNode="hydraulicOut01_detachedAdapter">
+            <objectChange node="hydraulicOut01_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+
+        <hose inputAttacherJointIndices="1" type="hydraulicIn"  node="hydraulicIn02"  length="1.5" diameter="0.02" adapterNode="hydraulicIn02_detachedAdapter">
+            <objectChange node="hydraulicIn02_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicOut" node="hydraulicOut02" length="1.5" diameter="0.02" adapterNode="hydraulicOut02_detachedAdapter">
+            <objectChange node="hydraulicOut02_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="electric" node="electric" length="1.5" diameter="0.02" straighteningFactor="1" adapterNode="electric_detachedAdapter">
+            <objectChange node="electric_detached" visibilityActive="false" visibilityInactive="true" />
+        </hose>
+        <hose inputAttacherJointIndices="1" type="airDoubleRed" node="airIn" length="1.5" diameter="0.02" straighteningFactor="1" adapterNode="airIn_detachedAdapter">
+            <objectChange node="airIn_detached" visibilityActive="false" visibilityInactive="true" />
+        </hose>
+        <hose inputAttacherJointIndices="1" type="airDoubleYellow" node="airOut" length="1.5" diameter="0.02" straighteningFactor="1" adapterNode="airOut_detachedAdapter">
+            <objectChange node="airOut_detached" visibilityActive="false" visibilityInactive="true" />
+        </hose>
+    </connectionHoses>
+
+    <lights>
+        <sharedLight linkNode="sideMarker18Static_left" filename="$data/shared/assets/lights/lizard/sideMarker18_left.xml" />
+        <sharedLight linkNode="sideMarker18Static_right" filename="$data/shared/assets/lights/lizard/sideMarker18_right.xml" />
+        <sharedLight linkNode="rearLight44_left" filename="$data/shared/assets/lights/lizard/rearLight44_left.xml" />
+        <sharedLight linkNode="rearLight44_right" filename="$data/shared/assets/lights/lizard/rearLight44_right.xml" />
+        <sharedLight linkNode="plateNumberLight01" filename="$data/shared/assets/lights/lizard/plateNumberLight01.xml" />
+        <sharedLight linkNode="plateNumberLight02" filename="$data/shared/assets/lights/lizard/plateNumberLight01.xml" />
+        <sharedLight linkNode="workingLight14" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight14.xml" />
+        <sharedLight linkNode="workingLight15" lightTypes="1" filename="$data/shared/assets/lights/lizard/workingLight14.xml" />
+        <sharedLight linkNode="workingLight16" lightTypes="1" filename="$data/shared/assets/lights/lizard/workingLight14.xml" />
+        <sharedLight linkNode="workingLight17" lightTypes="1" filename="$data/shared/assets/lights/lizard/workingLight14.xml" />
+
+        <realLights>
+            <high>
+                <light node="backLightsHigh1" lightTypes="0" />
+                <light node="licensePlateLightHigh" lightTypes="0" />
+                <light node="workLightBackHigh" lightTypes="1" />
+                <light node="workLightFrontHigh" lightTypes="2" />
+                <brakeLight node="backLightsHigh1" />
+                <turnLightLeft node="turnLightLeftBack" />
+                <turnLightRight node="turnLightRightBack" />
+            </high>
+        </realLights>
+    </lights>
+
+    <licensePlates>
+        <licensePlate node="licensePlateNodeBack"  position="BACK" preferedType="ELONGATED" placementArea="- 0.31 0.06 0.31"/>
+    </licensePlates>
+
+    <animations>
+        <animation name="foldPipe" soundVolumeFactor="0.8">
+            <part node="augerArm01"  startTime="0" endTime="6" startRot="0 0 0" endRot="0 0 -10"/>
+            <part node="augerArm02"  startTime="0" endTime="6" startRot="0 0 174" endRot="0 0 0"/>
+            <part node="augerArm03"  startTime="0" endTime="6" startRot="0 0 0" endRot="0 0 30"/>
+
+            <sound template="hydraulicOpen02"     startTime="0.01" endTime="5.9"  direction="-1"   pitchScale="1.2" volumeScale="1.6"/>
+            <sound template="hydraulicSoftOpen01" startTime="0.01" endTime="5.9"  direction="1"    pitchScale="0.7" volumeScale="1.2"/>
+            <sound template="cylinderPunch"       startTime="0.02" direction="-1" pitchScale="0.8" volumeScale="1.1"/>
+            <sound template="clackVar1"           startTime="0.1"  direction="-1" volumeScale="0.7"/>
+            <sound template="clackVar4"           startTime="0.01" direction="1"  pitchScale="0.4" volumeScale="3.0" fadeIn="0.2"/>
+            <sound template="clackVar4"           startTime="5.99" direction="-1" pitchScale="0.4" volumeScale="3.0" fadeIn="0.2"/>
+            <sound template="cylinderPunch"       startTime="5.99" direction="1"  pitchScale="0.7" volumeScale="1.1"/>
+            <sound template="clackVar1"           startTime="5.7"  direction="1"  pitchScale="0.8" volumeScale="0.8"/>
+            <sound template="latchSmall"          startTime="5.6"  direction="1"  pitchScale="0.4" volumeScale="0.3"/>
+            <sound template="hingeMedium"         startTime="2.8"  direction="1"  pitchScale="0.3" volumeScale="2.5"/>
+        </animation>
+
+        <animation name="moveSupport">
+            <part node="supportArm"  startTime="0.00" endTime="0.75" startTrans="0 0 0" endTrans="0 -0.51 0"/>
+
+            <sound template="metalClose" startTime="0.01" direction="-1" volumeScale="0.7" pitchScale="2.8" linkNode="attacherJoint"/>
+            <sound template="metalClose" startTime="0.7" direction="1"   volumeScale="0.7" pitchScale="2.8" linkNode="attacherJoint"/>
+            <sound template="clackVar1"  startTime="0.1" direction="1"   volumeScale="0.8" pitchScale="1.8" linkNode="attacherJoint"/>
+            <sound template="clackVar1"  startTime="0.7" direction="-1"  volumeScale="0.7" pitchScale="1.8" linkNode="attacherJoint"/>
+        </animation>
+
+        <animation name="toggleCover">
+            <part node="covers_closed" startTime="0"    endTime="0.05" visibility="true"/>
+            <part node="covers_closed" startTime="0.05" endTime="0.1"  visibility="false"/>
+            <part node="covers_opened" startTime="0"    endTime="0.05" visibility="false"/>
+            <part node="covers_opened" startTime="0.05" endTime="0.1"  visibility="true"/>
+
+            <sound template="fabricCover2" startTime="0.01" direction="1"  volumeScale="1.1" pitchScale="1.5"/>
+            <sound template="fabricCover1" startTime="0.05" direction="-1" volumeScale="1.1" pitchScale="1.8"/>
+        </animation>
+
+
+        <animation name="augerArm01Animation">
+            <part node="pipeRaycastNodeXRot" startTime="0.0" endTime="1.0" startRot="-17 0 0" endRot="0 0 0"/>
+        </animation>
+
+        <animation name="augerArm03Animation">
+            <part node="pipeRaycastNode" startTime="0.0" endTime="1.0" startRot="5.5 0 0" endRot="14 0 0"/>
+        </animation>
+    </animations>
+
+    <cylindered>
+        <movingTools>
+            <movingTool node="augerArm01" freezingPipeStates="1">
+                <controls axis="AXIS_PIPE" invertAxis="true" mouseSpeedFactor="0.3" iconName="PIPE_ROTATE_X"/>
+                <rotation rotSpeed="10" rotAcceleration="200" rotMax="0" rotMin="-25" startRot="0" rotationAxis="3"/>
+                <dependentAnimation name="augerArm01Animation" rotationAxis="3" minValue="-25" maxValue="0" invert="false"/>
+                <dependentPart node="augerArm01Hydraulic"/>
+                <powerTakeOffs localIndices="1"/>
+            </movingTool>
+            <movingTool node="augerArm03Rot" freezingPipeStates="1">
+                <controls axis="AXIS_PIPE2" invertAxis="false" mouseSpeedFactor="0.3" iconName="PIPE_END_ROTATE"/>
+                <rotation rotSpeed="25" rotAcceleration="200" rotMin="0" rotMax="18" startRot="0" rotationAxis="3"/>
+                <dependentAnimation name="augerArm03Animation" rotationAxis="3" minValue="0" maxValue="18" invert="false"/>
+                <dependentPart node="augerArm03Hydraulic"/>
+            </movingTool>
+            <movingTool node="augerArm02" playSound="true">
+                <dependentPart node="augerArm02Part01"/>
+                <dependentPart node="augerArm02Arm01"/>
+            </movingTool>
+            <movingTool node="augerArm03" playSound="true">
+                <dependentPart node="augerArm03Hydraulic"/>
+            </movingTool>
+        </movingTools>
+
+        <movingParts>
+            <movingPart node="augerArm02Part01" localReferencePoint="augerArm02Part02" referencePoint="augerArm02Part02Ref" referenceFrame="augerArm02Part01RefFrame">
+                <dependentPart node="augerArm02Part02" />
+            </movingPart>
+            <movingPart node="augerArm02Part02" referencePoint="augerArm02Part02Ref" referenceFrame="augerArm02Part02RefFrame"/>
+            <movingPart node="augerArm02Arm01" localReferencePoint="augerArm02Arm02" referencePoint="augerArm02Arm02Ref" referenceFrame="augerArm02Arm01RefFrame">
+                <dependentPart node="augerArm02Arm02" />
+                <dependentPart node="augerArm02Hydraulic" />
+            </movingPart>
+            <movingPart node="augerArm02Arm02" referencePoint="augerArm02Arm02Ref" referenceFrame="augerArm02Arm02RefFrame"/>
+            <movingPart node="augerArm02Hydraulic" referencePoint="augerArm02HydraulicRef" referenceFrame="augerArm02HydraulicRefFrame">
+                <translatingPart node="augerArm02HydraulicPunch" />
+            </movingPart>
+            <movingPart node="augerArm01Hydraulic" referencePoint="augerArm01HydraulicRef" referenceFrame="augerArm01HydraulicRef">
+                <translatingPart node="augerArm01HydraulicPunch" />
+            </movingPart>
+            <movingPart node="augerArm03Hydraulic" referencePoint="augerArm03HydraulicRef" referenceFrame="augerArm03HydraulicRef">
+                <translatingPart node="augerArm03HydraulicPunch" />
+            </movingPart>
+
+            <movingPart node="steeringBarFrontLeft" referencePoint="steeringBarFrontLeftRef" referenceFrame="steeringBarFrontLeftRef" scaleZ="true" isActiveDirty="true" maxUpdateDistance="25"/>
+            <movingPart node="steeringBarFrontRight" referencePoint="steeringBarFrontRightRef" referenceFrame="steeringBarFrontRightRef" scaleZ="true" isActiveDirty="true" maxUpdateDistance="25"/>
+            <movingPart node="steeringBarBackLeft" referencePoint="steeringBarBackLeftRef" referenceFrame="steeringBarBackLeftRef" scaleZ="true" isActiveDirty="true" maxUpdateDistance="25"/>
+            <movingPart node="steeringBarBackRight" referencePoint="steeringBarBackRightRef" referenceFrame="steeringBarBackRightRef" scaleZ="true" isActiveDirty="true" maxUpdateDistance="25"/>
+            <movingPart node="steeringBarFrontDamper" referencePoint="steeringBarFrontDamperRef" referenceFrame="steeringBarFrontDamperRef" isActiveDirty="true" maxUpdateDistance="25">
+                <translatingPart node="steeringBarFrontDamperPunch" />
+            </movingPart>
+            <movingPart node="steeringBarBackDamper" referencePoint="steeringBarBackDamperRef" referenceFrame="steeringBarBackDamperRef" isActiveDirty="true" maxUpdateDistance="25">
+                <translatingPart node="steeringBarBackDamperPunch" />
+            </movingPart>
+        </movingParts>
+
+        <sounds>
+            <actionSound template="hydraulicClose01"      pitchScale="1.2" volumeScale="0.9" linkNode="augerArm01Hydraulic" actionNames="TRANSLATING_POS TRANSLATING_NEG" nodes="augerArm01Hydraulic" fadeIn="0.1" fadeOut="0.05"/>
+            <actionSound template="hydraulicSmallClose"   pitchScale="1.6" volumeScale="0.7" linkNode="augerArm03Hydraulic" actionNames="TRANSLATING_POS TRANSLATING_NEG" nodes="augerArm03Hydraulic"/>
+            <actionSound template="clackVar4"             pitchScale="1"   volumeScale="0.2" linkNode="augerArm03Rot"       actionNames="TOOL_MOVE_END_POS_LIMIT"         nodes="augerArm03Rot"/>
+            <actionSound template="sheetImp02"            pitchScale="1.7" volumeScale="0.5" linkNode="augerArm03Rot"       actionNames="TOOL_MOVE_END_POS_LIMIT"         nodes="augerArm03Rot"/>
+            <actionSound template="clackVar6"             pitchScale="1"   volumeScale="0.5" linkNode="augerArm03Rot"       actionNames="TOOL_MOVE_END_POS_LIMIT"         nodes="augerArm03Rot"/>
+            <actionSound template="sheetImp02"            pitchScale="1.5" volumeScale="0.5" linkNode="augerArm03Rot"       actionNames="TOOL_MOVE_END_NEG_LIMIT"         nodes="augerArm03Rot"/>
+            <actionSound template="clackVar6"             pitchScale="0.8" volumeScale="0.5" linkNode="augerArm03Rot"       actionNames="TOOL_MOVE_END_NEG_LIMIT"         nodes="augerArm03Rot"/>
+            <actionSound template="clackVar6"             pitchScale="0.7" volumeScale="1.3" linkNode="augerArm01"          actionNames="TOOL_MOVE_END_NEG_LIMIT"         nodes="augerArm01"/>
+            <actionSound template="thudVar2"              pitchScale="1"   volumeScale="1.3" linkNode="augerArm01"          actionNames="TOOL_MOVE_END_NEG_LIMIT"         nodes="augerArm01"/>
+            <actionSound template="clackVar6"             pitchScale="0.8" volumeScale="1.3" linkNode="augerArm01"          actionNames="TOOL_MOVE_END_POS_LIMIT"         nodes="augerArm01"/>
+            <actionSound template="sheetImp02"            pitchScale="0.6" volumeScale="2"   linkNode="augerArm01"          actionNames="TOOL_MOVE_END_POS_LIMIT"         nodes="augerArm01"/>
+        </sounds>
+    </cylindered>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypeCategories="BULK" capacity="43000">
+                        <exactFillRootNode node="exactFillRootNode" />
+                        <dashboard displayType="TEXT" valueType="fillLevel" node="numbersWeight" textColor="0.5 0.5 0.5 1" textSize="0.1" textMask="00000" font="DIGIT" />
+                        <dashboard displayType="TEXT" valueType="fillLevel" node="numbersWeight1" textColor="0.5 0.5 0.5 1" textSize="0.1" textMask="00000" font="DIGIT" />
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <fillVolume>
+        <fillVolumeConfigurations>
+            <fillVolumeConfiguration>
+                <volumes>
+                    <volume node="fillVolume" maxDelta="0.2" fillUnitIndex="1" maxSubDivEdgeLength="0.5" />
+                </volumes>
+            </fillVolumeConfiguration>
+        </fillVolumeConfigurations>
+
+        <unloadInfos>
+            <unloadInfo>
+                <node node="unloadInfo" width="0.3" length="0.3" />
+            </unloadInfo>
+        </unloadInfos>
+    </fillVolume>
+
+    <pipe dischargeNodeIndex="1">
+        <states num="2" unloading="2" />
+        <animation name="foldPipe" speedScale="1" />
+        <unloadingTriggers>
+            <unloadingTrigger node="trailerTrigger" />
+        </unloadingTriggers>
+
+        <animationNodes>
+            <animationNode node="auger01" rotSpeed="500"  rotAxis="3" turnOnFadeTime="2" turnOffFadeTime="2" />
+            <animationNode node="auger02" rotSpeed="500"  rotAxis="3" turnOnFadeTime="2" turnOffFadeTime="2" />
+            <animationNode node="auger03" rotSpeed="500"  rotAxis="3" turnOnFadeTime="2" turnOffFadeTime="2" />
+            <animationNode node="auger04" rotSpeed="500"  rotAxis="3" turnOnFadeTime="2" turnOffFadeTime="2" />
+            <animationNode node="auger05" rotSpeed="500"  rotAxis="3" turnOnFadeTime="2" turnOffFadeTime="2" />
+            <animationNode node="auger06" rotSpeed="500"  rotAxis="3" turnOnFadeTime="2" turnOffFadeTime="2" />
+            <animationNode node="chain"   rotSpeed="-130" turnOnFadeTime="2" turnOffFadeTime="2" shaderComponentScale="0 1 0 0" shaderParameterName="offsetUV" />
+        </animationNodes>
+    </pipe>
+
+    <dischargeable>
+        <dischargeNode node="pipeRaycastNode" emptySpeed="1000" fillUnitIndex="1" unloadInfoIndex="1" maxDistance="8">
+            <info width="0.3" length="0.3" useRaycastHitPosition="true"/>
+            <raycast yOffset="0.5"/>
+
+            <effects>
+                <effectNode effectClass="PipeEffect" effectNode="pipeEffect"      materialType="pipe" delay="0" maxBending="0.93" positionUpdateNodes="pipeEffectSmoke" extraDistance="0.75"/>
+                <effectNode                          effectNode="pipeEffectSmoke" materialType="unloadingSmoke"  delay="0.1" alignToWorldY="true"/>
+            </effects>
+
+            <dischargeStateSound template="augerBelt" pitchScale="0.65" volumeScale="0.6" fadeIn="0.5" fadeOut="2.7"/>
+        </dischargeNode>
+    </dischargeable>
+
+    <cover>
+        <coverConfigurations>
+            <coverConfiguration>
+                <cover openAnimation="toggleCover" fillUnitIndices="1"/>
+            </coverConfiguration>
+        </coverConfigurations>
+    </cover>
+
+    <ai>
+        <allowTurnBackward value="false"/>
+        <agentAttachment jointNode="attacherJoint" rotCenterWheelIndices="1 2 3 4 5 6" width="3.1" height="4.15" length="9.8" lengthOffset="1"/>
+    </ai>
+
+    <foliageBending>
+        <bendingNode wheelIndices="1 2 3 4 5 6" minZ="-5.7" maxZ="1.0" yOffset="0.6"/>
+        <bendingNode minX="-1.0" maxX="1.0" minZ="1.0" maxZ="4.0" yOffset="0.65"/>
+        <bendingNode minX="-0.4" maxX="0.4" minZ="4" maxZ="5.6" yOffset="0.65"/>
+    </foliageBending>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="3" fieldMultiplier="2"/>
+
+    <rimColorConfigurations>
+        <rimColorConfiguration materialTemplateName="RIM_DEFAULT"/>
+        <rimColorConfiguration materialTemplateName="KRAMPE_BLACK1"/>
+    </rimColorConfigurations>
+
+    <designConfigurations title="$l10n_configuration_abdeckung">
+        <designConfiguration name="$l10n_configuration_no" price="0">
+            <objectChange node="augerArm02Part01RefFrame" visibilityActive="false" visibilityInactive="true"/>
+        </designConfiguration>
+        <designConfiguration name="$l10n_configuration_yes" price="590">
+            <objectChange node="augerArm02Part01RefFrame" visibilityActive="true" visibilityInactive="false"/>
+        </designConfiguration>
+    </designConfigurations>
+
+   <design2Configurations title="$l10n_configuration_gen">
+        <design2Configuration name="$l10n_configuration_old" price="0">
+            <objectChange node="ulw4000Decals_newGeneration" visibilityActive="false"/>
+            <objectChange node="ulw4000Decals_oldGeneration" visibilityActive="true"/>
+            <objectChange node="ulw4000DecalsAuger_newGeneration" visibilityActive="false"/>
+            <objectChange node="ulw4000DecalsAuger_oldGeneration" visibilityActive="true"/>
+            <material materialSlotName="cover_plane" materialTemplateName="POETTINGER_YELLOW"/> 
+            <material materialSlotName="flap_color" materialTemplateName="HAWE_RED1"/>
+            <material materialSlotName="chassis" materialTemplateName="HAWE_OLDGREEN1"/>
+            <material materialSlotName="baseColor" materialTemplateName="HAWE_OLDGREEN1"/>
+        </design2Configuration>
+        <design2Configuration name="$l10n_configuration_oldRed" price="1250">
+            <objectChange node="ulw4000Decals_newGeneration" visibilityActive="false"/>
+            <objectChange node="ulw4000Decals_oldGeneration" visibilityActive="true"/>
+            <objectChange node="ulw4000DecalsAuger_newGeneration" visibilityActive="false"/>
+            <objectChange node="ulw4000DecalsAuger_oldGeneration" visibilityActive="true"/>
+            <material materialSlotName="cover_plane" materialTemplateName="POETTINGER_YELLOW"/> 
+            <material materialSlotName="flap_color" materialTemplateName="HAWE_RED1"/>
+            <material materialSlotName="chassis" materialTemplateName="HAWE_RED1"/>
+            <material materialSlotName="baseColor" materialTemplateName="HAWE_OLDGREEN1"/>
+        </design2Configuration>
+        <design2Configuration name="$l10n_configuration_new" price="1800">
+            <objectChange node="ulw4000Decals_newGeneration" visibilityActive="true"/>
+            <objectChange node="ulw4000Decals_oldGeneration" visibilityActive="false"/>
+            <objectChange node="ulw4000DecalsAuger_newGeneration" visibilityActive="true"/>
+            <objectChange node="ulw4000DecalsAuger_oldGeneration" visibilityActive="false"/>
+            <material materialSlotName="cover_plane" materialTemplateName="HAWE_GREEN1"/>
+            <material materialSlotName="flap_color" materialTemplateName="HAWE_GREY1"/>
+            <material materialSlotName="chassis" materialTemplateName="HAWE_GREY1"/>
+            <material materialSlotName="baseColor" materialTemplateName="HAWE_GREEN1"/>
+        </design2Configuration>
+        <design2Configuration name="$l10n_configuration_newBlack" price="2500">
+            <objectChange node="ulw4000Decals_newGeneration" visibilityActive="true"/>
+            <objectChange node="ulw4000Decals_oldGeneration" visibilityActive="false"/>
+            <objectChange node="ulw4000DecalsAuger_newGeneration" visibilityActive="true"/>
+            <objectChange node="ulw4000DecalsAuger_oldGeneration" visibilityActive="false"/>
+            <material materialSlotName="cover_plane" materialTemplateName="KRAMPE_BLACK1"/>
+            <material materialSlotName="flap_color" materialTemplateName="KRAMPE_BLACK1"/>
+            <material materialSlotName="chassis" materialTemplateName="KRAMPE_BLACK1"/>
+            <material materialSlotName="baseColor" materialTemplateName="KRAMPE_BLACK1"/>
+        </design2Configuration>
+    </design2Configurations>
+
+    <design3Configurations title="$l10n_configuration_weight">
+        <design3Configuration name="$l10n_configuration_no" price="0">
+            <objectChange node="numbersWeight" translationActive="0 -50 0"/>
+            <objectChange node="numbersWeight1" translationActive="0 -50 0"/>
+            <objectChange node="weightDisplay" visibilityActive="false"/>
+        </design3Configuration>
+        <design3Configuration name="$l10n_configuration_yes" price="2820">
+            <objectChange node="numbersWeight" visibilityActive="true"/>
+            <objectChange node="numbersWeight1" visibilityActive="true"/>
+            <objectChange node="weightDisplay" visibilityActive="true"/>
+        </design3Configuration>
+    </design3Configurations>
+
+    <design4Configurations title="$l10n_configuration_fender">
+        <design4Configuration name="$l10n_configuration_no" price="0">
+            <objectChange node="fenderBigMain" visibilityActive="false"/>
+            <objectChange node="fenderSmallMain" visibilityActive="false"/>
+        </design4Configuration>
+        <design4Configuration name="$l10n_configuration_yes" price="650">
+            <objectChange node="fenderBigMain" visibilityActive="true"/>
+            <objectChange node="fenderSmallMain" visibilityActive="true"/>
+        </design4Configuration>
+    </design4Configurations>
+
+    <i3dMappings>
+        <i3dMapping id="ulw4000_main_component1" node="0>" />
+        <i3dMapping id="ulw4000_vis" node="0>0" />
+        <i3dMapping id="attacherJoint" node="0>0|0|0" />
+        <i3dMapping id="supportArm" node="0>0|0|1" />
+        <i3dMapping id="localPtoEnd" node="0>0|0|2|0" />
+        <i3dMapping id="ptoInputNode" node="0>0|0|2|1" />
+        <i3dMapping id="ptoDetachNode" node="0>0|0|2|2" />
+        <i3dMapping id="hydraulicIn01_detached" node="0>0|0|3|0" />
+        <i3dMapping id="hydraulicIn01_detachedAdapter" node="0>0|0|3|0|0" />
+        <i3dMapping id="hydraulicOut01_detached" node="0>0|0|3|1" />
+        <i3dMapping id="hydraulicOut01_detachedAdapter" node="0>0|0|3|1|0" />
+        <i3dMapping id="hydraulicIn02_detached" node="0>0|0|3|2" />
+        <i3dMapping id="hydraulicIn02_detachedAdapter" node="0>0|0|3|2|0" />
+        <i3dMapping id="hydraulicOut02_detached" node="0>0|0|3|3" />
+        <i3dMapping id="hydraulicOut02_detachedAdapter" node="0>0|0|3|3|0" />
+        <i3dMapping id="electric_detached" node="0>0|0|3|4" />
+        <i3dMapping id="electric_detachedAdapter" node="0>0|0|3|4|0" />
+        <i3dMapping id="airIn_detached" node="0>0|0|3|5" />
+        <i3dMapping id="airIn_detachedAdapter" node="0>0|0|3|5|0" />
+        <i3dMapping id="airOut_detached" node="0>0|0|3|6" />
+        <i3dMapping id="airOut_detachedAdapter" node="0>0|0|3|6|0" />
+        <i3dMapping id="electric" node="0>0|0|3|7" />
+        <i3dMapping id="hydraulicIn01" node="0>0|0|3|8" />
+        <i3dMapping id="hydraulicOut02" node="0>0|0|3|9" />
+        <i3dMapping id="airOut" node="0>0|0|3|10" />
+        <i3dMapping id="hydraulicOut01" node="0>0|0|3|11" />
+        <i3dMapping id="airIn" node="0>0|0|3|12" />
+        <i3dMapping id="hydraulicIn02" node="0>0|0|3|13" />
+        <i3dMapping id="axisFrontLeft" node="0>0|1|0" />
+        <i3dMapping id="wheelFrontLeft" node="0>0|1|0|0" />
+        <i3dMapping id="steeringBarFrontLeft" node="0>0|1|0|1" />
+        <i3dMapping id="steeringBarFrontDamperRef" node="0>0|1|0|1|0" />
+        <i3dMapping id="axisFrontRight" node="0>0|1|1" />
+        <i3dMapping id="wheelFrontRight" node="0>0|1|1|0" />
+        <i3dMapping id="steeringBarFrontRight" node="0>0|1|1|1" />
+        <i3dMapping id="wheelMiddleLeft" node="0>0|1|2" />
+        <i3dMapping id="wheelMiddleRight" node="0>0|1|3" />
+        <i3dMapping id="axisBackLeft" node="0>0|1|4" />
+        <i3dMapping id="wheelBackLeft" node="0>0|1|4|0" />
+        <i3dMapping id="steeringBarBackLeft" node="0>0|1|4|1" />
+        <i3dMapping id="steeringBarBackDamperRef" node="0>0|1|4|1|0" />
+        <i3dMapping id="axisBackRight" node="0>0|1|5" />
+        <i3dMapping id="wheelBackRight" node="0>0|1|5|0" />
+        <i3dMapping id="steeringBarBackRight" node="0>0|1|5|1" />
+        <i3dMapping id="steeringBarFront" node="0>0|1|6" />
+        <i3dMapping id="steeringBarFrontLeftRef" node="0>0|1|6|0" />
+        <i3dMapping id="steeringBarFrontRightRef" node="0>0|1|6|1" />
+        <i3dMapping id="steeringBarBack" node="0>0|1|7" />
+        <i3dMapping id="steeringBarBackLeftRef" node="0>0|1|7|0" />
+        <i3dMapping id="steeringBarBackRightRef" node="0>0|1|7|1" />
+        <i3dMapping id="steeringBarFrontDamper" node="0>0|1|8" />
+        <i3dMapping id="steeringBarFrontDamperPunch" node="0>0|1|8|0" />
+        <i3dMapping id="steeringBarBackDamper" node="0>0|1|9" />
+        <i3dMapping id="steeringBarBackDamperPunch" node="0>0|1|9|0" />
+        <i3dMapping id="wheelChock01" node="0>0|1|10" />
+        <i3dMapping id="wheelChock02" node="0>0|1|11" />
+        <i3dMapping id="rearLight44_left" node="0>0|2|0|0" />
+        <i3dMapping id="rearLight44_right" node="0>0|2|0|1" />
+        <i3dMapping id="plateNumberLight01" node="0>0|2|0|2" />
+        <i3dMapping id="plateNumberLight02" node="0>0|2|0|3" />
+        <i3dMapping id="redTriangle_02" node="0>0|2|0|4" />
+        <i3dMapping id="redTriangle_03" node="0>0|2|0|5" />
+        <i3dMapping id="sideMarker18Static_left" node="0>0|2|0|6" />
+        <i3dMapping id="sideMarker18Static_right" node="0>0|2|0|7" />
+        <i3dMapping id="workingLight15" node="0>0|2|0|8" />
+        <i3dMapping id="workingLight16" node="0>0|2|0|9" />
+        <i3dMapping id="yellowRectangle_01" node="0>0|2|0|10" />
+        <i3dMapping id="yellowRectangle_02" node="0>0|2|0|11" />
+        <i3dMapping id="yellowRectangle_03" node="0>0|2|0|12" />
+        <i3dMapping id="yellowRectangle_04" node="0>0|2|0|13" />
+        <i3dMapping id="yellowRectangle_05" node="0>0|2|0|14" />
+        <i3dMapping id="yellowRectangle_06" node="0>0|2|0|15" />
+        <i3dMapping id="workingLight17" node="0>0|2|0|16" />
+        <i3dMapping id="backLightsHigh1" node="0>0|2|1|0" />
+        <i3dMapping id="licensePlateLightHigh" node="0>0|2|1|1" />
+        <i3dMapping id="turnLightLeftBack" node="0>0|2|2|0" />
+        <i3dMapping id="turnLightRightBack" node="0>0|2|2|1" />
+        <i3dMapping id="workLightFrontHigh" node="0>0|2|3|0" />
+        <i3dMapping id="workLightBackHigh" node="0>0|2|3|1" />
+        <i3dMapping id="augerArm01" node="0>0|3|0" />
+        <i3dMapping id="augerArm02" node="0>0|3|0|0" />
+        <i3dMapping id="augerArm03Rot" node="0>0|3|0|0|0" />
+        <i3dMapping id="augerArm03" node="0>0|3|0|0|0|0" />
+        <i3dMapping id="augerArm03HydraulicRef" node="0>0|3|0|0|0|0|0" />
+        <i3dMapping id="pipeEffect" node="0>0|3|0|0|0|0|1|0" />
+        <i3dMapping id="pipeEffectSmoke" node="0>0|3|0|0|0|0|1|1" />
+        <i3dMapping id="pipeRaycastNodeXRot" node="0>0|3|0|0|0|0|2|0" />
+        <i3dMapping id="pipeRaycastNode" node="0>0|3|0|0|0|0|2|0|0" />
+        <i3dMapping id="augerArm02Part02Ref" node="0>0|3|0|0|1" />
+        <i3dMapping id="augerArm02Arm02Ref" node="0>0|3|0|0|2" />
+        <i3dMapping id="augerArm03Hydraulic" node="0>0|3|0|0|3" />
+        <i3dMapping id="augerArm03HydraulicPunch" node="0>0|3|0|0|3|0" />
+        <i3dMapping id="auger05" node="0>0|3|0|0|4|0" />
+        <i3dMapping id="workingLight14" node="0>0|3|0|0|5|0|0" />
+        <i3dMapping id="augerArm02Part01RefFrame" node="0>0|3|0|1" />
+        <i3dMapping id="augerArm02Part01" node="0>0|3|0|1|0" />
+        <i3dMapping id="augerArm02Part02RefFrame" node="0>0|3|0|1|0|0" />
+        <i3dMapping id="augerArm02Part02" node="0>0|3|0|1|0|0|0" />
+        <i3dMapping id="augerArm02Arm01RefFrame" node="0>0|3|0|2" />
+        <i3dMapping id="augerArm02Arm01" node="0>0|3|0|2|0" />
+        <i3dMapping id="augerArm02Arm02RefFrame" node="0>0|3|0|2|0|0" />
+        <i3dMapping id="augerArm02Arm02" node="0>0|3|0|2|0|0|0" />
+        <i3dMapping id="augerArm02HydraulicRef" node="0>0|3|0|2|0|1" />
+        <i3dMapping id="augerArm02HydraulicRefFrame" node="0>0|3|0|3" />
+        <i3dMapping id="augerArm02Hydraulic" node="0>0|3|0|3|0" />
+        <i3dMapping id="augerArm02HydraulicPunch" node="0>0|3|0|3|0|0" />
+        <i3dMapping id="augerArm01HydraulicRef" node="0>0|3|0|4" />
+        <i3dMapping id="localPtoStart" node="0>0|3|0|5" />
+        <i3dMapping id="auger04" node="0>0|3|0|6|0" />
+        <i3dMapping id="auger06" node="0>0|3|0|7" />
+        <i3dMapping id="chain" node="0>0|3|0|8" />
+        <i3dMapping id="augerArm01Hydraulic" node="0>0|3|1" />
+        <i3dMapping id="augerArm01HydraulicPunch" node="0>0|3|1|0" />
+        <i3dMapping id="auger01" node="0>0|3|2" />
+        <i3dMapping id="auger02" node="0>0|3|3" />
+        <i3dMapping id="auger03" node="0>0|3|4" />
+        <i3dMapping id="covers_closed" node="0>0|4|0" />
+        <i3dMapping id="covers_opened" node="0>0|4|1" />
+        <i3dMapping id="trailerTrigger" node="0>0|5|0" />
+        <i3dMapping id="exactFillRootNode" node="0>0|5|1" />
+        <i3dMapping id="fillVolume" node="0>0|5|2" />
+        <i3dMapping id="unloadInfo" node="0>0|5|3" />
+        <i3dMapping id="licensePlateNodeBack" node="0>0|6" />
+        <i3dMapping id="numbersWeight" node="0>0|7" />
+        <i3dMapping id="numbersWeight1" node="0>0|8" />
+        <i3dMapping id="weightDisplay" node="0>0|10|0" />
+        <i3dMapping id="crawlerLeftBackWheelRepr" node="0>0|10|1|0" />
+        <i3dMapping id="crawlerLeftBackWheelDriveNode" node="0>0|10|1|0|0" />
+        <i3dMapping id="crawlerLeftLinkNodeRefFrame" node="0>0|10|1|0|1" />
+        <i3dMapping id="crawlerLeftLinkNode" node="0>0|10|1|0|1|0" />
+        <i3dMapping id="crawlerLeftFrontWheel" node="0>0|10|1|1" />
+        <i3dMapping id="crawlerRightBackWheelRepr" node="0>0|10|1|2" />
+        <i3dMapping id="crawlerRightBackWheelDriveNode" node="0>0|10|1|2|0" />
+        <i3dMapping id="crawlerRightLinkNodeRefFrame" node="0>0|10|1|2|1" />
+        <i3dMapping id="crawlerRightLinkNode" node="0>0|10|1|2|1|0" />
+        <i3dMapping id="crawlerRightFrontWheel" node="0>0|10|1|3" />
+        <i3dMapping id="wheels" node="0>0|1" />
+        <i3dMapping id="crawler" node="0>0|10|1" />
+        <i3dMapping id="ulw4000Decals_newGeneration" node="0>0|10|3|0" />
+        <i3dMapping id="ulw4000Decals_oldGeneration" node="0>0|10|3|1" />
+        <i3dMapping id="ulw4000DecalsAuger_newGeneration" node="0>0|3|0|0|6|0" />
+        <i3dMapping id="ulw4000DecalsAuger_oldGeneration" node="0>0|3|0|0|6|1" />
+        <i3dMapping id="fenderSmallMain" node="0>0|10|2|0" />
+        <i3dMapping id="fenderSmall" node="0>0|10|2|0|0" />
+        <i3dMapping id="fenderBigMain" node="0>0|10|2|1" />
+        <i3dMapping id="fenderBig" node="0>0|10|2|1|0" />
+    </i3dMappings>
+</vehicle>
